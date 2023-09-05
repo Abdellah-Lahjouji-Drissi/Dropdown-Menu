@@ -1,0 +1,87 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600&family=Work+Sans:wght@100;300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+body{
+    background-color: #C5DFF8;
+    font-size: 20px;
+    display: flex;
+  
+}
+
+.select-menu{
+      width: 400px;
+      margin: 80px auto;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    padding: 20px;
+    height: 60px;
+    background-color: #ffff;
+    font-weight: 400;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(0 ,0,0 , 0.11);
+}
+
+.select-btn i{
+    font-size: 25px;
+}
+
+.select-menu .options{
+    position: relative;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: 0 0 4px rgb(0 ,0,0 , 0.11);
+    border-radius: 8px;
+}
+
+.options .option{
+    display: flex;
+    height: 56px;
+    cursor: pointer;
+    padding: 0 16px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.option:hover{
+    background-color: #F2F2F2;
+}
+
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.option-text{
+    font-size: 18px;
+    
+}
+
+.select-menu .options{
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
+ 
+
+
